@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 800px;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.container > div {
+    text-align: center;
+    margin-top: 50px;
+}
+.container > div h2 {
+    color: red;
+}
+.container > div > div {
+    background-color: rgb(188, 229, 188);
+    padding:15px;
+    margin:5px;
+    border:1px solid black;
+    transition: all 0.2s;
+}
+.container > div > div p {
+    font-weight: bold;
+}
+.container > div > div p:nth-of-type(2) {
+    font-size:20px;
+}
+.container > div > div span{
+    color: red;
+}
+.container > div > div:hover {
+    background-color: rgb(229, 188, 188);
+    transform: scale(105%);
+}
+
+.container > div > div img{
+    cursor: pointer;
+}
+
+.container > div > div:{
+    transform: scale(95%);
+}
+
+.container > div > div:active {
+    background-color: rgb(183, 153, 153);
+    transform: scale(95%);
+}

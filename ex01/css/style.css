@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.alegre {
+    animation-name: moverPersonagemAlegre;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.nervoso {
+    animation-name: moverPersonagemNervoso;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes moverPersonagemAlegre {
+    0%, 100% {
+        transform: translate(0px);
+    }
+    25% {
+        transform: translate(50px);
+    }
+    75% {
+        transform: translate(-50px);
+    }
+}
+
+
+@keyframes moverPersonagemNervoso {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85% {
+        transform: rotate(5deg);
+    }
+
+    10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
+        transform: rotate(-5deg);
+    }
+
+}
